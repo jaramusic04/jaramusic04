@@ -1,0 +1,160 @@
+/* Reset general de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f4f6f9; /* Fondo gris suave */
+    color: #333; /* Texto oscuro */
+    padding: 0;
+    margin: 0;
+}
+
+/* Encabezado de la página */
+.encabezado {
+    text-align: center;
+    color: #fff;
+    padding: 40px;
+    background: linear-gradient(45deg, #005a74, #0094b6); /* Gradiente en tonos azules */
+    margin-top: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.encabezado p {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.encabezado h1 {
+    font-size: 3.5rem;
+    margin-top: 20px;
+    letter-spacing: 5px;
+}
+
+/* Estilo para los botones de Administrador y Salir */
+.Administrador {
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.Administrador a {
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: #fff;
+    background: #0078a2; /* Azul profesional */
+    padding: 14px 28px;
+    border-radius: 12px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 120, 162, 0.3);
+}
+
+.Administrador a:hover {
+    background: #005a74;
+    box-shadow: 0 6px 15px rgba(0, 120, 162, 0.5);
+}
+
+.Administrador i {
+
+    padding-right: 8px;
+}
+
+/* Contenedor general de las plantas */
+.totalplantas {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+/* Estilo de cada planta */
+.plantas, .proco, .santoni {
+    width: 30%;
+    background: rgba(0, 120, 162, 1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+    border: 1px solid #ddd; /* Bordes suaves */
+    
+}
+
+h2 {
+    color: #f4f6f9;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+p {
+    color: #f4f6f9; /* Gris suave */
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+/* Lista de elementos de cada planta */
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #f4f6f9; /* Gris suave */
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+ul li a i {
+    margin-right: 12px;
+    font-size: 1.4rem;   
+}
+
+/* Efecto de hover para enlaces */
+ul li a:hover {
+    color: #d7d9da; /* Azul de enlace */
+    text-shadow: 0 0 10px #d7d9da, 0 0 10px #d7d9da;
+}
+
+/* Efecto hover en las plantas */
+.plantas:hover, .proco:hover, .santoni:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 120, 162, 0.3);
+    background: linear-gradient(45deg, #005a74, #0094b6); /* Efecto dinámico */
+    
+}
+
+
+
+/* Diseño responsivo */
+@media (max-width: 768px) {
+    .totalplantas {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .plantas, .proco, .santoni {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .Administrador {
+        flex-direction: column;
+        align-items: center;
+    }
+}

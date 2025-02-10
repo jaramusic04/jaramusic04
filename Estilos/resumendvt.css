@@ -1,0 +1,231 @@
+/* Reset general de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f4f6f9; /* Fondo gris claro para darle suavidad al diseño */
+    color: #333; /* Color de texto oscuro para contraste */
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Encabezado más serio */
+.encabezado {
+    text-align: center;
+    color: #fff;
+    padding: 40px 20px;
+    background: linear-gradient(45deg, #004e72, #006a8e); /* Azul más serio */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.encabezado p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.encabezado h1 {
+    font-size: 3rem;
+    margin-top: 10px;
+    letter-spacing: 3px;
+}
+
+/* Barra de navegación más sutil */
+.cinta_opciones {
+    display: flex;
+    justify-content: center;
+    background-color: #006a8e; /* Azul oscuro más profesional */
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.cinta_opciones ul {
+    list-style: none;
+    display: flex;
+}
+
+.cinta_opciones li {
+    margin: 0 20px;
+    font-size: 1.1rem;
+}
+
+.cinta_opciones a {
+    text-decoration: none;
+    color: #b0bec5; /* Color suave y profesional */
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.cinta_opciones a:hover {
+    color: #ffffff; /* Blanco en hover */
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+}
+
+/* Fechas y semana con toque profesional */
+.fechasemana {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #00796b; /* Verde apagado para un toque empresarial */
+    margin-top: 20px;
+    text-shadow: 0 0 10px rgba(0, 151, 107, 0.5);
+}
+
+
+.tabla-contenedor {
+    margin: 50px;
+   width: 800px;
+   
+}
+
+#lubricar, #proximos {
+    font-size: 22px;
+    margin-bottom: 20px;
+    border-radius: 100px;
+    padding: 10px;
+}
+    
+
+#lubricar {
+    color: #f2f2f2;
+    background: #df5151;
+    border: 1px solid #df5151; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+#lubricar:hover, #proximos:hover{
+    transform: scale(1.03);
+}
+#proximos {
+    background: #4ecf5a;
+    color: #f2f2f2;
+    border: 1px solid #4ecf5a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Estilo de tabla más sobrio */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff; /* Fondo blanco para las tablas */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+.titulo, .telar {
+    color: #fff;
+}
+
+
+td {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd; /* Borde suave y sutil */
+    color: #333;
+    font-size: 0.9rem;
+}
+
+.titulo1 {
+    background: #df5151;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    color: #f2f2f2;
+}
+
+
+
+.titulo2 {
+    background: #4ecf5a;
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    color: #f2f2f2;
+}
+
+
+td {
+    background-color: #f4f6f9; /* Color de fondo gris claro */
+    transition: background-color 0.3s ease-in-out;
+}
+
+tr:hover td {
+    background-color: #006a8e; /* Verde apagado para el hover */
+    color: #fff;
+    transform: scale(1.05);
+}
+
+
+
+.resumen1, .resumen2 {
+    margin: 0;
+    width: 100%;
+    
+    
+}
+
+.resumen1:hover, .resumen2:hover{
+    transform: scale(1.05);
+}
+
+.tablas {
+    
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.tablas table{
+    padding-right: 50px;
+}
+
+
+/* Efecto de animación para las filas */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+tbody tr {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+    .cinta_opciones ul {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .cinta_opciones li {
+        margin: 10px 0;
+    }
+
+    table {
+        font-size: 1rem;
+    }
+
+    th, td {
+        padding: 15px;
+    }
+}

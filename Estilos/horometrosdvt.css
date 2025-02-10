@@ -1,0 +1,224 @@
+/* Reset general de márgenes y padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general del body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f4f6f9; /* Fondo gris claro para darle suavidad al diseño */
+    color: #333; /* Color de texto oscuro para contraste */
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* Encabezado más serio */
+.encabezado {
+    text-align: center;
+    color: #fff;
+    padding: 40px 20px;
+    background: linear-gradient(45deg, #004e72, #006a8e); /* Azul más serio */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
+}
+
+.encabezado p {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.encabezado h1 {
+    font-size: 3rem;
+    margin-top: 10px;
+    letter-spacing: 3px;
+}
+
+/* Barra de navegación más sutil */
+.cinta_opciones {
+    display: flex;
+    justify-content: center;
+    background-color: #006a8e; /* Azul oscuro más profesional */
+    padding: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.cinta_opciones ul {
+    list-style: none;
+    display: flex;
+}
+
+.cinta_opciones li {
+    margin: 0 20px;
+    font-size: 1.1rem;
+}
+
+.cinta_opciones a {
+    text-decoration: none;
+    color: #b0bec5; /* Color suave y profesional */
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: all 0.3s ease-in-out;
+}
+
+.cinta_opciones a:hover {
+    color: #ffffff; /* Blanco en hover */
+    text-shadow: 0 0 10px #ffffff, 0 0 20px #ffffff;
+}
+
+/* Fechas y semana con toque profesional */
+.fechasemana {
+    text-align: center;
+    font-size: 1.3rem;
+    color: #004e72;
+    margin-top: 20px;
+    text-shadow: 0 0 10px rgba(0, 151, 107, 0.5);
+}
+
+#actualizarBtn {
+    background: #57cc47;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-right: 80px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #006a8e;
+}
+
+#actualizarBtn:hover{
+    
+    transform: scale(1.05);
+
+
+}
+
+.contenedor-opciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.informacion {
+    display: flex;
+    gap: 20px;
+    padding-left: 50px;
+}
+
+.info-caja {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    width: 150px;
+    text-align: center;
+}
+
+.info-caja h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    
+}
+
+#pendientes {
+    background-color: #f8d7da;
+    border-left: 10px solid #f5a3aa;
+    
+}
+
+#proximos {
+    background-color: #fff3cd;
+    border-left: 10px solid #f8e197;
+}
+/* Estilo de tabla más sobrio */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #ffffff; /* Fondo blanco para las tablas */
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.barra {
+    background: #b0bec5; /* Gris claro para el encabezado */
+    color: #b0bec5; ;
+    font-weight: bold;
+}
+
+.titulo, .telar {
+    color: #fff;
+}
+
+
+th, td {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ddd; /* Borde suave y sutil */
+    color: #333;
+    font-size: 0.9rem;
+}
+
+th {
+    background: linear-gradient(135deg, #004e72, #006a8e); /* Gradiente de azul serio */
+    font-weight: bold;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+td {
+    background-color: #f4f6f9; /* Color de fondo gris claro */
+    transition: background-color 0.3s ease-in-out;
+}
+
+tr:hover td {
+    background-color: #00796b; /* Verde apagado para el hover */
+    color: #fff;
+    transform: scale(1.05);
+}
+
+
+
+
+/* Efecto de animación para las filas */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+tbody tr {
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+    .cinta_opciones ul {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .cinta_opciones li {
+        margin: 10px 0;
+    }
+
+    table {
+        font-size: 1rem;
+    }
+
+    th, td {
+        padding: 15px;
+    }
+}
